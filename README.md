@@ -20,13 +20,24 @@ Usage
     ```
 
 2. Import the jp format
-   ```javascript
 
-    import { jpFormat } from 'dayjs-jp-format' // load on demand
-    dayjs.extend(jpFormat) // use plugin
-    const date = '2020-06-24'
-    dayjs(date).format('rrrr') // --> 令和02
-    ```
+```javascript
+import { jpFormat } from 'dayjs-jp-era'
+dayjs.extend(jpFormat) // use plugin
+
+const date = '2020-06-24'
+const result = dayjs(date).format('rrrr')
+console.log(result); //-> 令和2
+
+const result = dayjs(date).format('rrrr年')
+console.log(result); //-> 令和2年
+
+const result = dayjs(date).format('rrr')
+console.log(result); //-> 令和2年
+
+const result = dayjs(date).format('rr')
+console.log(result); //-> 令和
+```
 
 Format
 ---
