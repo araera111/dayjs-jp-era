@@ -1,6 +1,6 @@
 {
   "name": "dayjs-jp-era",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Japanese Era format for dayjs.",
   "source": "src/main.ts",
   "main": "dist/main.js",
