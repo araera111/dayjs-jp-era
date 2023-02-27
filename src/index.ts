@@ -1,10 +1,9 @@
-import { PluginFunc } from 'dayjs';
+import dayjs from 'dayjs';
 import { getJpEra, getJpYear } from './util';
 
-export const jpFormat: PluginFunc = (_o, c) => {
-  const proto = c.prototype;
-  const oldFormat = proto.format;
-
+export const jpFormat: dayjs.PluginFunc = (_, dayjsClass) => {
+  const proto = dayjsClass.prototype;
+  const oldFormat = dayjsClass.prototype.format;
   proto.format = function (formatStr: string) {
     const result = formatStr.replace(/\[([^\]]+)]|r+|/g, (match) => {
       switch (match) {

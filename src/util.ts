@@ -1,8 +1,8 @@
-import dayjs, { Dayjs } from 'dayjs';
+import dayjs, { ConfigType, Dayjs } from 'dayjs';
 
 export const dropLastString = (str: string) => str.slice(0, -1);
 
-export const getJpYear = (date: Date | string | Dayjs, isYear: boolean): string => {
+export const getJpYear = (date: ConfigType, isYear: boolean): string => {
   let result: string;
   try {
     const jpDate = Intl.DateTimeFormat('ja-JP-u-ca-japanese', {
@@ -16,7 +16,7 @@ export const getJpYear = (date: Date | string | Dayjs, isYear: boolean): string 
   return result;
 };
 
-export const getJpEra = (date: Date | string | Dayjs): string => {
+export const getJpEra = (date: ConfigType | string | Dayjs): string => {
   let result: string;
   try {
     result = Intl.DateTimeFormat('ja-JP-u-ca-japanese', {
