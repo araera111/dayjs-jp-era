@@ -9,15 +9,17 @@ https://github.com/hyakt/dayjs-jp-format さんをフォークしてます。
 Usage
 ---
 1. Install the repository
-    ```bash
-    $ npm install --save dayjs-jp-format
-    $ npm install --save dayjs # peer dependency
-    ```
-    or
-    ```bash
-    $ yarn add dayjs-jp-format
-    $ yarn add dayjs # peer dependency
-    ```
+```bash
+$ npm install --save dayjs-jp-format
+$ npm install --save dayjs # peer dependency
+```
+
+or
+
+```bash
+$ yarn add dayjs-jp-format
+$ yarn add dayjs # peer dependency
+```
 
 2. Import the jp format
 
